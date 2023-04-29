@@ -1,9 +1,12 @@
 {
   "name": "@dialectik/plugin-interface",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dialectik plugin interface",
   "main": "lib/plugin-interface.js",
   "types": "lib/plugin-interface.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --skipLibCheck true"
