@@ -1,0 +1,22 @@
+{
+  "name": "@dialectik/plugin-interface",
+  "version": "1.0.0",
+  "description": "Dialectik plugin interface",
+  "main": "lib/plugin-interface.js",
+  "types": "lib/plugin-interface.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --skipLibCheck true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "rehype": "^12.0.1",
+    "unified": "^10.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0"
+  }
+}
