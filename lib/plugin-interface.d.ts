@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import { Plugin } from 'unified';
 export interface IDialectikPlugin {
     name: string;
@@ -6,7 +5,10 @@ export interface IDialectikPlugin {
     emstylesheets?: Array<string>;
     remarkPlugins?: Array<Plugin<any, any>>;
     rehypePlugins?: Array<Plugin<any, any>>;
-    component?: Component;
+    react?: {
+        tagname: string;
+        componentname: string;
+    };
     isRequired: (markdown: string) => boolean;
 }
 export interface IPluginProvider {
