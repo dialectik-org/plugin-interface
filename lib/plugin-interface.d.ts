@@ -1,6 +1,5 @@
 import { Plugin } from 'unified';
 export interface IDialectikPlugin {
-    name: string;
     stylesheets?: Array<string>;
     emstylesheets?: Array<string>;
     remarkPlugins?: Array<Plugin<any, any>>;
