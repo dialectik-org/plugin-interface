@@ -1,6 +1,6 @@
 {
   "name": "@dialectik/plugin-interface",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Dialectik plugin interface",
   "main": "lib/plugin-interface.js",
   "types": "lib/plugin-interface.d.ts",

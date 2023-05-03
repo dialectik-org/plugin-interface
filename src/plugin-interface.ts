@@ -11,5 +11,5 @@ export interface IDialectikPlugin {
 }
 
 export interface IPluginProvider {
-  getPlugin: { () : IDialectikPlugin };
+  getPlugin: { (arg ?: any) : IDialectikPlugin };
 }
