@@ -1,13 +1,14 @@
-import React, { ComponentType } from 'react';
 import { Plugin } from 'unified';
 
 export interface IDialectikPlugin {
+  withMain: boolean;
+  withComponents: boolean;
+  isRequired: (markdown: string) => boolean
+  scripts ?: Array<string>;
   stylesheets?: Array<string>;
-  emstylesheets?: Array<string>;
   remarkPlugins?: Array<Plugin<any, any>>;
   rehypePlugins?: Array<Plugin<any, any>>;
-  react?: { tagname: string, componentname: string};
-  isRequired: (markdown: string) => boolean
+  requires: Array<string>
 }
 
 export interface IPluginProvider {
